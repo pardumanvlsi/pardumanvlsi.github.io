@@ -139,6 +139,8 @@ summary:hover { color: var(--accent); }
 .board-media { margin-top: 0; }
 .board-media img { aspect-ratio: 1; object-fit: contain; background: white; }
 .study-block { border-top: 1px solid var(--line); padding-top: 32px; margin-top: 36px; }
+.study-block > summary .eyebrow { display: block; margin-bottom: 12px; }
+.study-block-title { display: block; font-size: 23px; font-weight: 500; line-height: 1.3; }
 .study-block h3 { margin-top: 0; }
 .study-block > .eyebrow { margin-bottom: 12px; }
 .study-block > p, .study-columns p { margin-bottom: 16px; }

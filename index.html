@@ -379,8 +379,9 @@
             <details><summary>Validation flow overview</summary><div class="case-study"><figure class="study-media original-flow"><a href="assets/internship-slide-flow.png" target="_blank" rel="noopener noreferrer" aria-label="Open the validation workflow image in a new tab"><img src="assets/internship-slide-flow.png" alt="Validation workflow linking hardware environment generation, Linux boot, debugging, codec commands, and validation" width="1024" height="1024" loading="lazy"></a><figcaption>Hardware and software validation overview, showing environment preparation, Linux bring-up, debugging, and codec testing.</figcaption></figure></div></details>
           </div>
 
-          <div class="study-block" aria-labelledby="results-title">
-            <p class="eyebrow">EVIDENCE / SELECTED RUNS</p><h3 id="results-title">Validation outcomes</h3>
+          <details class="study-block" aria-labelledby="results-title">
+            <summary><span class="eyebrow">EVIDENCE / SELECTED RUNS</span><span class="study-block-title" id="results-title">Validation outcomes</span></summary>
+            <div class="study-block-content">
             <p>Completed a working Yocto environment, image deployment and device initialization, and execution of both GStreamer and Control Software workflows. The results below summarize selected internship test runs, not an exhaustive qualification of the IP.</p>
             <dl class="run-metrics"><div><dt>Rendered frames</dt><dd>717</dd></div><div><dt>Dropped frames</dt><dd>0</dd></div><div><dt>Final average rate</dt><dd>5.04 FPS</dd></div><div><dt>Completion</dt><dd>EOS received</dd></div></dl>
             <figure class="study-media result-media"><a href="assets/internship-gstreamer.png" target="_blank" rel="noopener noreferrer" aria-label="Open GStreamer result screenshot at full resolution in a new tab"><img src="assets/internship-gstreamer.png" alt="GStreamer log ending with 717 rendered frames, zero dropped frames, average 5.04 FPS, and end of stream" width="1544" height="238" loading="lazy"></a><figcaption>GStreamer output from a selected validation run. These values are not VCU2 peak throughput, a latency measurement, or a real-time 4K60 benchmark.</figcaption></figure>
@@ -400,14 +401,17 @@
               </div>
               <p class="study-note">*The recorded configuration combines an AVC_HIGH10 label with a 12-bit field. This inconsistency needs confirmation and is not treated as evidence of profile compliance. Raw checksums, internal test paths, and confidential reference-software logs are not reproduced.</p>
             </div></details>
-          </div>
+            </div>
+          </details>
 
-          <div class="study-block">
-            <h3>Applications and IP context</h3>
+          <details class="study-block">
+            <summary><span class="study-block-title">Applications and IP context</span></summary>
+            <div class="study-block-content">
             <p>Relevant applications include surveillance cameras, automotive video, broadcasting, and medical video. These are application examples, not deployments completed during the internship.</p>
             <p>AMD's PG447 guide describes VCU2 use cases, latency modes, and dynamic operations. Product capabilities and configuration requirements belong to the official guide; they should not be inferred from one validation run.</p>
             <a class="source-link" href="https://docs.amd.com/r/en-US/pg447-vcu2-solutions/VCU2-Use-Cases" target="_blank" rel="noopener noreferrer">AMD PG447 / VCU2 use cases <span aria-hidden="true">&nearr;</span></a>
-          </div>
+            </div>
+          </details>
         </div>
       </section>
 
