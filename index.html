@@ -341,8 +341,9 @@
             </figure>
           </div>
 
-          <div class="study-block" aria-labelledby="timing-integration-title">
-            <p class="eyebrow">ARCHITECTURE / TIMING / IMPLEMENTATION</p><h3 id="timing-integration-title">From RTL integration to hardware</h3>
+          <details class="study-block">
+            <summary><span class="eyebrow">ARCHITECTURE / TIMING / IMPLEMENTATION</span><span class="study-block-title" id="timing-integration-title">From RTL integration to hardware</span></summary>
+            <div class="study-block-content">
             <div class="study-columns">
               <div><h4>Architecture and integration</h4><p>The VCU2 encoder and decoder connect through AXI interfaces and the network-on-chip to external memory. My integration work supported AXI interfaces, clocking networks, and reset distribution around the existing codec hard IP.</p></div>
               <div><h4>Timing challenge</h4><p>Multiple clock domains required analysis of setup/hold paths, clock skew, and critical timing bottlenecks. I debugged RTL and XDC constraints with design engineers to support timing convergence.</p></div>
@@ -351,10 +352,12 @@
             </div>
             <p class="study-note">The public material does not include final timing-slack reports, closure percentages, or crossing counts. The recorded results below demonstrate selected hardware-validation runs, not complete timing sign-off.</p>
             <details><summary>View the VCU2 architecture</summary><div class="case-study"><figure class="study-media"><a href="assets/vcu-architecture.png" target="_blank" rel="noopener noreferrer" aria-label="Open VCU2 architecture diagram at full resolution in a new tab"><img src="assets/vcu-architecture.png" alt="VCU2 encoder and decoder connected through the network-on-chip to external memory" width="1200" height="720" loading="lazy"></a><figcaption>Repository architecture illustration; not a hardware test capture.</figcaption></figure></div></details>
-          </div>
+            </div>
+          </details>
 
-          <div class="study-block" aria-labelledby="workflow-title">
-            <p class="eyebrow">BUILD / DEPLOY / VALIDATE</p><h3 id="workflow-title">The validation workflow</h3>
+          <details class="study-block">
+            <summary><span class="eyebrow">BUILD / DEPLOY / VALIDATE</span><span class="study-block-title" id="workflow-title">The validation workflow</span></summary>
+            <div class="study-block-content">
             <figure class="workflow-figure">
               <ol class="workflow" aria-label="Six-stage VCU2 integration and validation flow">
                 <li class="workflow-step"><span class="step-index">01 / HARDWARE</span><details><summary>Generate the design</summary><p>Open the VCU2 example design in Vivado, check the block design, and export the XSA and programming artifacts.</p></details><p class="step-output">XSA + PDIs</p></li>
@@ -370,7 +373,8 @@
               <p><strong>Encode</strong><span>Raw YUV frames</span><span aria-hidden="true">&rarr;</span><span>VCU2 encoder</span><span aria-hidden="true">&rarr;</span><span>H.264 / H.265 bitstream</span></p>
               <p><strong>Decode</strong><span>Compressed bitstream</span><span aria-hidden="true">&rarr;</span><span>VCU2 decoder</span><span aria-hidden="true">&rarr;</span><span>Raw video frames</span></p>
             </div>
-          </div>
+            </div>
+          </details>
 
           <div class="study-block">
             <h3>Integration details</h3>
